@@ -39,7 +39,7 @@ export const products = [
     id: "3",
     name: "Smart Fitness Watch",
     type: "Watch",
-    image: ".s/images/wrist-watch.png",
+    image: "./images/wrist-watch.png",
     rating: 4.2,
     description: "Smartwatch with fitness tracking and call features. Sleek, modern design suitable for all occasions. Compatible with Android and iOS devices.",
     discountPrice: 199.99,
