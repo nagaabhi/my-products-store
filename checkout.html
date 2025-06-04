@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Out Page</title>
+  </head>
+  <link rel="stylesheet" href="./styles/checkout.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <body>
+    <nav>
+      <div class="navbar cart-navbar" id="home">
+        <div class="navbar-left">
+          <div class="heading">
+            <a href="./index.html">
+              <h1><span>PRODUCTS</span> STORE</h1></a
+            >
+          </div>
+        </div>
+
+        <div class="navbar-right">
+          <a href="#home">HOME</a>
+          <a href="#banner">ABOUT</a>
+          <a href="#products">PRODUCTS</a>
+          <a>CONTACT</a>
+          <a>
+            <span class="js-update-cart-count">5</span><i style="font-size: 20px" class="fa">&#xf07a;</i>
+          </a>
+          <a class="js-show-pop-up-message"></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="cart-table-content-container js-cart-products"></div>
+
+    <div class="now-products-found-warning-msg">
+      <h1>
+        <span><img src="./icons/cart-empty-image-icon.png" alt="" /></span>YOUR
+        CART IS EMPTY
+      </h1>
+    </div>
+
+    <div class="order-sumary-container">
+      <div class="select">
+        <p>Selected Offer Summary</p>
+
+        <div class="sub-total">
+          <div class="total">Sub Total</div>
+
+          <div class="sub-total-value">&#8377;000.00</div>
+        </div>
+
+        <div class="tax">
+          <div class="tax">Tax</div>
+
+          <div class="tax-value">&#8377;00</div>
+        </div>
+
+        <div class="hr-line"></div>
+
+        <div class="final-total">
+          <div class="final">Final Total:</div>
+
+          <div class="total-price">&#8377;000.00</div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./scripts/checkout.js"></script>
+  </body>
+</html>

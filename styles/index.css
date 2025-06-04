@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.navbar-right a {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.na .navbar-right a:nth-child(5) span {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.navbar-right a:nth-child(5) {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.heading h1 span {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.heading h1 {
+  border: 2px black solid;
+  padding: 8px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgb(187, 187, 187);
+}
+.navbar-right a:hover {
+  color: rgb(248, 57, 14);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.banner-section {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  place-content: center;
+  place-items: center;
+  transition: all 0.5s ease-in-out;
+
+  background-image: linear-gradient(to top, #5b58ffbc 0%, #f3f6ff 100%);
+  padding: 50px;
+  margin-top: 70px;
+}
+.banner-section-right img {
+  width: 400px;
+  mix-blend-mode: darken;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+.banner-section-left h1 {
+  font-size: 43px;
+  font-weight: 500;
+}
+.banner-section-left p {
+  font-size: 13px;
+}
+.banner-section-left button {
+  border: none;
+  height: 40px;
+  width: 35%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px 1px rgb(63, 63, 63);
+  cursor: pointer;
+}
+.products-image img {
+  mix-blend-mode: darken;
+  width: 100px;
+}
+.products-details {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  place-content: center;
+  place-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px rgb(237, 237, 237);
+}
+.shoe-products-previews {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  place-content: center;
+  place-items: center;
+  margin-top: 40px;
+}
+.products-details {
+  line-height: 13px;
+  padding: 20px;
+}
+.products-info h1 {
+  font-size: 15px;
+}
+.products-info p {
+  font-size: 12px;
+}
+.shop-now {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.products-details {
+  background-color: white;
+}
+.checked {
+  color: rgb(255, 60, 0);
+}
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 300px));
+  place-content: center;
+  row-gap: 40px;
+  column-gap: 40px;
+
+  margin-top: 50px;
+  padding: 10px;
+}
+.product-image img {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  mix-blend-mode: darken;
+}
+.shop-products h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.line {
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8%;
+  background-color: rgb(244, 32, 32);
+  border-radius: 20px;
+  margin-top: 0;
+}
+.products-container-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  padding: 10px;
+  row-gap: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 10px 1px rgb(231, 231, 231);
+  border-radius: 10px;
+}
+.quantity-check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.add-to-cart-button button {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 140px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+i {
+  margin-right: 10px;
+}
+.quantity-hike-buttons button {
+  border: none;
+  width: 50px;
+  background-color: lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-price-duttribution {
+  display: flex;
+  flex-direction: row;
+}
+.discount-price {
+  margin-right: 10px;
+}
+.product-original-price {
+  text-decoration: line-through;
+}
+.product-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.product-details {
+  font-weight: 300;
+  font-size: 13px;
+}
+.product-price-duttribution,
+.total-stocks-avialable,
+.quantity-check {
+  font-size: 13px;
+}
+.products-type {
+  background-color: rgb(255, 218, 218);
+  width: 40%;
+  text-align: center;
+  padding: 2px;
+  border-radius: 20px;
+}
+.add-to-cart-hover:hover {
+  background-color: white;
+  border: 2px black solid;
+  color: black;
+  transition: all 0.5s ease-out;
+}
+.add-to-cart-leave:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.js-show-pop-up-message {
+  position: absolute;
+  font-size: 10px;
+  top: 80px;
+  width: 270px;
+  right: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 1px rgb(68, 68, 68);
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.show-pop-up-message {
+  visibility: visible;
+  transform: scale(1.1);
+}
+.js-show-pop-up-message span {
+  color: red;
+}
+/* .products-container-details{
+  position: relative;
+}
+.products-type{
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  margin-bottom: 100px;
+
+} */
+
+@media (min-width: 700px) and (max-width: 1150px) {
+  .banner-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    transform: scale(1.1);
+  }
+  .shoe-products-previews {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    place-items: center;
+    row-gap: 30px;
+  }
+  .banner-section-right {
+    margin-top: 30px;
+  }
+}
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.navbar-left .heading span {
+  color: #00ffff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cart-quantity-value {
+  background-color: red;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: relative;
+  top: -2px;
+  right: 5px;
+  color: white;
+}
+
+/* Hamburger menu (mobile only) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.outer-container {
+  border: 1px lightgray solid;
+  height: 30px;
+  margin-top: 10px;
+  width: 70px;
+  margin-left: 20px;
+  border-radius: 200px;
+}
+.inner-container {
+  border: 1px lightgray solid;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  width: 30px;
+}
+.navbar-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-right {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .navbar-right.active {
+    display: flex;
+  }
+
+  .navbar-right a {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 699px) {
+  .shoe-products-previews {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    place-items: center;
+    row-gap: 30px;
+    margin-top: 70px;
+  }
+  .banner-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    transform: scale(1.1);
+  }
+}
+.products-shipping-details {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  place-content: center;
+  place-items: center;
+  margin-top: 50px;
+}
+.products-shopping-info,
+.return-info,
+.gurantee,
+.onlin-support {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  place-items: center;
+  font-size: 12px;
+  line-height: 13px;
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+}
+.products-shipping-details img {
+  width: 30px;
+}
