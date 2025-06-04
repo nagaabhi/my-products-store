@@ -135,7 +135,7 @@ document.querySelectorAll('.js-add-to-cart-button').forEach((addToCartBtn) => {
 
     addToCart(productId);
     updateCartQuantity();
-    updateCartCount();
+
 
     setTimeout(() => {
       showPopUpMessage.classList.remove('show-pop-up-message');
